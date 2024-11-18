@@ -14,8 +14,6 @@ This project is an analysis workflow rewritten in R, following the methodology o
 - **Output**:  
   Filtered metadata, processed expression data, and gene length information.  
 
----
-
 #### **Step 2: Normalization**
 - **Input**:  
   Processed expression data and gene length information.  
@@ -23,8 +21,6 @@ This project is an analysis workflow rewritten in R, following the methodology o
   Raw counts are converted to FPKM values using the edgeR package, accounting for sequencing depth through CPM normalization and adjusting for gene lengths to ensure comparability across genes.
 - **Output**:  
   Normalized FPKM matrix.  
-
----
 
 #### **Step 3: Log2 Fold Change Calculation**
 - **Input**:  
@@ -34,8 +30,6 @@ This project is an analysis workflow rewritten in R, following the methodology o
 - **Output**:  
   Log2FC values for each gene and patient.  
 
----
-
 #### **Step 4: Gene Set Enrichment Analysis**
 - **Input**:  
   Log2FC values and a gene set file (e.g., `.gmt`).  
@@ -44,8 +38,6 @@ This project is an analysis workflow rewritten in R, following the methodology o
 - **Output**:  
   NES results for each sample pair.  
 
----
-
 #### **Step 5: Principal Component Analysis**
 - **Input**:  
   Log2FC values and precomputed PCA rotation data.  
@@ -53,8 +45,6 @@ This project is an analysis workflow rewritten in R, following the methodology o
   Genes overlapping between PCA rotation data and log2FC results are used to compute PC1 scores. Log2FC values are projected onto the PC1 vector to quantify transcriptional variation for each sample pair.  
 - **Output**:  
   PC1 scores for each sample pair.  
-
----
 
 #### **Step 6: Visualization**
 - **Input**:  
@@ -68,3 +58,8 @@ This project is an analysis workflow rewritten in R, following the methodology o
 
 ### References
 Tanner, G., Barrow, R., Ajaib, S., Al-Jabri, M., Ahmed, N., Pollock, S., Finetti, M., Rippaus, N., Bruns, A. F., Syed, K., Poulter, J. A., Matthews, L., Hughes, T., Wilson, E., Johnson, C., Varn, F. S., Brüning-Richardson, A., Hogg, C., Droop, A., Gusnanto, A., Care, M. A., Cutillo, L., Westhead, D. R., Short, S. C., Jenkinson, M. D., Brodbelt, A., Chakrabarty, A., Ismail, A., Verhaak, R. G. W. & Stead, L. F. (2024) 'IDHwt glioblastomas can be stratified by their transcriptional response to standard treatment, with implications for targeted therapy', *Genome Biology*, vol. 25, p. 45.
+
+---
+
+### Notes
+This workflow integrates data preparation, gene set enrichment, and PCA to create a reproducible framework for analyzing transcriptional changes in glioblastomas, enabling meaningful patient stratification.
