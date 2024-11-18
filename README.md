@@ -5,7 +5,7 @@ This project is an analysis workflow rewritten in R, following the methodology o
 
 ---
 
-### Workflow Steps
+### Workflow
 #### **Step 1: Data Preparation**
 - **Input**:  
   Gene annotation file (e.g., `.gtf`), metadata file, and raw gene expression data.  
