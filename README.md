@@ -42,7 +42,7 @@ This R-based workflow, adapted from Tanner et al., 2024, provides a reproducible
 - **Input**:  
   Log2FC values and precomputed PCA rotation data.  
 - **Process**:  
-  Genes overlapping between PCA rotation data and log2FC results are used to compute PC1 scores. Log2FC values are projected onto the PC1 vector to quantify transcriptional variation for each sample pair.  
+  Genes overlapping between PCA rotation data and log2FC results are used to compute PC1 scores. Log2FC values are  mapped onto an existing PCA space, using the PCA rotation data to calculate PC1 scores. 
 - **Output**:  
   PC1 scores for each sample pair.  
 
