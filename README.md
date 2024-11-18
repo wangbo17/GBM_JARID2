@@ -4,6 +4,7 @@ This project is an analysis workflow rewritten in R, following the methodology o
 <img src="https://github.com/user-attachments/assets/81fc50ac-8c25-42cc-8bdf-356fe1e1e488" alt="NES_vs_PC1_plot" width="80%"/>
 
 ---
+
 ### Workflow Steps
 #### **Step 1: Data Preparation**
 - **Input**:  
