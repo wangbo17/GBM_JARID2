@@ -5,7 +5,7 @@ This R-based workflow, adapted from Tanner et al., 2024, provides a reproducible
 
 ---
 
-### Workflow
+### Analysis Workflow
 #### **Step 1: Data Preparation**
 - **Input**:  
   Gene annotation file (e.g., `.gtf`), metadata file, and raw gene expression data.  
@@ -59,7 +59,3 @@ This R-based workflow, adapted from Tanner et al., 2024, provides a reproducible
 ### References
 Tanner, G., Barrow, R., Ajaib, S., Al-Jabri, M., Ahmed, N., Pollock, S., Finetti, M., Rippaus, N., Bruns, A. F., Syed, K., Poulter, J. A., Matthews, L., Hughes, T., Wilson, E., Johnson, C., Varn, F. S., Brüning-Richardson, A., Hogg, C., Droop, A., Gusnanto, A., Care, M. A., Cutillo, L., Westhead, D. R., Short, S. C., Jenkinson, M. D., Brodbelt, A., Chakrabarty, A., Ismail, A., Verhaak, R. G. W. & Stead, L. F. (2024) 'IDHwt glioblastomas can be stratified by their transcriptional response to standard treatment, with implications for targeted therapy', *Genome Biology*, vol. 25, p. 45.
 
----
-
-### Notes
-This workflow integrates data preparation, gene set enrichment, and PCA to create a reproducible framework for analyzing transcriptional changes in glioblastomas, enabling meaningful patient stratification.
