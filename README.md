@@ -1,5 +1,5 @@
 ### Overview
-This R-based workflow, developed following the methodology outlined in Tanner et al., 2024, offers a reproducible framework for analysing transcriptional changes between primary and recurrent IDHwt glioblastomas post-treatment, facilitating meaningful patient stratification.
+This R-based workflow, developed following the methodology outlined in Tanner et al., 2024, provides a reproducible framework for analysing transcriptional changes between primary and recurrent IDHwt glioblastomas post-treatment, enabling the stratification of patients into distinct response groups based on their transcriptional profiles.
 
 <img src="https://github.com/user-attachments/assets/81fc50ac-8c25-42cc-8bdf-356fe1e1e488" alt="NES_vs_PC1_plot" width="90%"/>
 
