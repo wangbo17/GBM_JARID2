@@ -6,7 +6,7 @@ This R-based workflow, developed following the methodology outlined in Tanner et
 ---
 
 ### Analysis Workflow
-#### **Step 1: Data Preparation**
+#### **Step 0: Data Preparation**
 - **Input**:  
   Gene annotation file (e.g., `.gtf`), metadata file, and raw gene expression data.  
 - **Process**:  
@@ -14,7 +14,7 @@ This R-based workflow, developed following the methodology outlined in Tanner et
 - **Output**:  
   Filtered metadata, processed expression data, and gene length information.  
 
-#### **Step 2: Normalization**
+#### **Step 1: Normalization**
 - **Input**:  
   Processed expression data and gene length information.  
 - **Process**:  
@@ -22,7 +22,7 @@ This R-based workflow, developed following the methodology outlined in Tanner et
 - **Output**:  
   Normalized FPKM matrix.  
 
-#### **Step 3: Log2 Fold Change Calculation**
+#### **Step 2: Log2 Fold Change Calculation**
 - **Input**:  
   Normalized FPKM matrix and filtered metadata for paired samples.  
 - **Process**:  
@@ -30,7 +30,7 @@ This R-based workflow, developed following the methodology outlined in Tanner et
 - **Output**:  
   Log2FC values for each gene and patient.  
 
-#### **Step 4: Gene Set Enrichment Analysis**
+#### **Step 3: Gene Set Enrichment Analysis**
 - **Input**:  
   Log2FC values and a gene set file (e.g., `.gmt`).  
 - **Process**:  
@@ -38,7 +38,7 @@ This R-based workflow, developed following the methodology outlined in Tanner et
 - **Output**:  
   NES results for each sample pair.  
 
-#### **Step 5: Principal Component Analysis**
+#### **Step 4: Principal Component Analysis**
 - **Input**:  
   Log2FC values and precomputed PCA rotation data.  
 - **Process**:  
@@ -46,7 +46,7 @@ This R-based workflow, developed following the methodology outlined in Tanner et
 - **Output**:  
   PC1 scores for each sample pair.  
 
-#### **Step 6: Visualization**
+#### **Step 5: Visualization**
 - **Input**:  
   NES results and PC1 scores.  
 - **Process**:  
